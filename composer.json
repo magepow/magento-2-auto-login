@@ -1,0 +1,11 @@
+{
+    "require": {
+        "magepow/autologin": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "https://github.com/nans/AutoLogin.git"
+        }
+    ]
+}
