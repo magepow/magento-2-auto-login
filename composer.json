@@ -1,11 +1,13 @@
 {
-    "require": {
-        "magepow/autologin": "dev-master"
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url":  "https://github.com/nans/AutoLogin.git"
-        }
-    ]
+  "name": "magepow/autologin",
+  "description": "magento 2 autologin.",
+  "require": {
+      "nans/AutoLogin": "dev-master"
+  },
+  "repositories": [
+      {
+          "type": "vcs",
+          "url":  "https://github.com/nans/AutoLogin.git"
+      }
+  ]
 }
