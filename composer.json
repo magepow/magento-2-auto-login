@@ -1,9 +1,6 @@
 {
   "name": "magepow/autologin",
   "description": "magento 2 autologin.",
-  "require": {
-      "nans/AutoLogin": "dev-master"
-  },
   "repositories": [
       {
           "type": "vcs",
