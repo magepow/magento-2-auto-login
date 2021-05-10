@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <magepow_autologin>
+            <customer>
+                <enabled>1</enabled>
+             <option_customer></option_customer>
+            </customer>
+            <admin>
+            	<enabled>1</enabled>
+                <option_admin></option_admin>
+            </admin>
+        </magepow_autologin>
+    </default>
+</config>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+ <type name="Magento\Backend\Model\Auth">
+        <plugin name="auto_login_auth_plugin" type="Magepow\Autologin\Plugin\Backend\Model\AuthPlugin" />
+    </type>
+    <type name="Magento\Customer\Model\Session">
+        <plugin name="auto_login_session_plugin" type="Magepow\Autologin\Plugin\Customer\Model\SessionPlugin" />
+    </type>
+   
+ </config>

@@ -1,18 +1,28 @@
 {
   "name": "magepow/autologin",
-  "repositories": [
+  "description": "Autologin helps you to login programatically without using password",
+  "require": {
+    "magepow/core": "^1.0.0"
+  },
+  "type": "magento2-module",
+  "license": [
+      "OSL-3.0",
+      "AFL-3.0"
+  ],
+  "authors": [
     {
-      "type": "package",
-      "package": {
-        "name": "nans/magento2-autologin",
-        "version": "1.2.3",
-        "type": "drupal-theme",
-        "source": {
-          "url": "https://github.com/nans/AutoLogin.git",
-          "type": "git",
-          "reference": "master"
-        }
-      }
+      "name": "Magepow",
+      "email": "support@magepow.com",
+      "homepage": "https://magepow.com",
+      "role": "Technical Support"
     }
-  ]
+  ],
+  "autoload": {
+      "files": [
+          "registration.php"
+      ],
+      "psr-4": {
+          "Magepow\\Autologin\\": ""
+      }
+  }
 }
