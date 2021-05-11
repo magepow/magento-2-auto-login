@@ -6,7 +6,7 @@
                 <resource id="Magento_Backend::stores">
                     <resource id="Magento_Backend::stores_settings">
                         <resource id="Magento_Config::config">
-                            <resource id="Magepow_Autologin::autologin_config" title="Autologin"/>
+                            <resource id="Magepow_Autologin::config" title="Autologin"/>
                         </resource>
                     </resource>
                 </resource>
