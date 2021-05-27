@@ -4,11 +4,11 @@
         <magepow_autologin>
             <customer>
                 <enabled>1</enabled>
-             <option_customer></option_customer>
+             <option_customer>1</option_customer>
             </customer>
             <admin>
             	<enabled>1</enabled>
-                <option_admin></option_admin>
+                <option_admin>1</option_admin>
             </admin>
         </magepow_autologin>
     </default>
