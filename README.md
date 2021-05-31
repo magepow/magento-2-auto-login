@@ -1,4 +1,5 @@
-[!Latest Stable Version](https://poser.pugx.org/magepow/autologin/v/stable)](https://packagist.org/packages/magepow/autologin)
+
+[![Latest Stable Version](https://poser.pugx.org/magepow/autologin/v/stable)](https://packagist.org/packages/magepow/autologin)
 [![Total Downloads](https://poser.pugx.org/magepow/autologin/downloads)](https://packagist.org/packages/magepow/autologin)
 [![Daily Downloads](https://poser.pugx.org/magepow/autologin/d/daily)](https://packagist.org/packages/magepow/autologin)
 
