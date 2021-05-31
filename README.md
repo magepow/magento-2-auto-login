@@ -27,7 +27,7 @@ Before you continue, ensure you meet the following requirements:
   * You are using a Linux or Mac OS machine. Windows is not currently supported.
   Install magento2-instagram extension
 
-### Step 1 : Download Magento 2 Ajax Wishlist Extension
+### Step 1 : Download Magento 2 Autologin Extension
 
  #### Install via composer (recommend)
 Run the following commands in Magento 2 root folder:
@@ -43,7 +43,7 @@ php bin/magento setup:static-content:deploy -f
 
   `Login to Magento admin > Stores > Configuration > Magepow > Autologin > General Options > Enable > Choose Yes to enable the module.`
   
-  ![Image of Magento admin config](https://github.com/magepow/magento-2-ajax-wishlist/blob/master/media/config_wishlist.png)
+  ![Image of Magento admin config](https://github.com/magepow/magento-2-auto-login/blob/master/media/autologin_config.png)
   
    In `Stores > Configuration > Magepow > Auto Login > General Options` we set: 
    * **Enable**: Turn on to enable autologin for customer or admin
@@ -56,8 +56,7 @@ php bin/magento setup:static-content:deploy -f
    ```
   ### 2.2. Result
    
-   ![Image of magento store front](https://github.com/magepow/magento-2-ajax-wishlist/blob/master/media/popup.png)
-   ![Image of magento store front](https://github.com/magepow/magento-2-ajax-wishlist/blob/master/media//show_image_form_login.png)
+   ![Image of magento store front](https://github.com/magepow/magento-2-auto-login/blob/master/media/result_autologin.gif)
 
  ## Donation
 
