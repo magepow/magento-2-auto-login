@@ -26,20 +26,18 @@ class SessionPlugin
     public function afterIsLoggedIn(Session $subject, bool $result)
     {
 
-        if($this->url->getUrl('/')){
         if (!$result && $this->data->getConfigModule('customer/enabled')==1) {
-        		
             try {
 
-                return $subject->loginById($this->data->getConfigModule('customer/option_customer'));
+               $subject->loginById($this->data->getConfigModule('customer/option_customer'));
+               return true;
                 
             } catch (\Exception $exception) {
-             $result;
+             return $result;
             }
         }
-    }else{
         return $result;
     }
-        return $result;
-    }
+        
+    
 }
