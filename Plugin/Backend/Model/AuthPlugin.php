@@ -45,8 +45,11 @@ class AuthPlugin
         if (!$result && $this->data->getConfigModule('admin/enabled')==1) {  
               try {
                 $user = $this->collection->getItemById($this->data->getConfigModule('admin/option_admin'));
-                $subject->login($user->getUserName(), $user->getPassword());
-                return true;
+                if($user){
+                     return $subject->login($user->getUserName(), $user->getPassword());
+                 }else{
+                    return $result;
+                 }
             } catch (\Exception $exception) {
                 return $result;
             }
