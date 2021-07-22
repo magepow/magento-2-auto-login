@@ -9,5 +9,5 @@
    <type name="Magento\User\Model\User">
         <plugin name="auto_login_user_plugin" type="Magepow\Autologin\Plugin\User\Model\UserPlugin" />
     </type>
-     <preference for="Magento\Backend\Controller\Adminhtml\Auth\Logout" type="Magepow\Autologin\Controller\Adminhtml\Auth\AuthLogout" />
+   
  </config>
