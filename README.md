@@ -1,8 +1,3 @@
-
-[![Latest Stable Version](https://poser.pugx.org/magepow/autologin/v/stable)](https://packagist.org/packages/magepow/autologin)
-[![Total Downloads](https://poser.pugx.org/magepow/autologin/downloads)](https://packagist.org/packages/magepow/autologin)
-[![Daily Downloads](https://poser.pugx.org/magepow/autologin/d/daily)](https://packagist.org/packages/magepow/autologin)
-
 ## Magento 2 Auto Login (Magepow Auto login extension Free)
 
 **Auto Login** extension helps user login without using password and name account. 
@@ -15,10 +10,7 @@
 
 - Support 100% for Magento
 
-
 Autologin is a instersting extension that most e-commerce websites demo can use for improving the convenient.
-[![Latest Stable Version](https://poser.pugx.org/magepow/autologin/v/stable)](https://packagist.org/packages/magepow/autologin)
-[![Total Downloads](https://poser.pugx.org/magepow/autologin/downloads)](https://packagist.org/packages/magepow/autologin)
 
 ## How to use Auto login extension
 Before you continue, ensure you meet the following requirements:
@@ -26,7 +18,10 @@ Before you continue, ensure you meet the following requirements:
   * You have installed magento2
   * You are using a Linux or Mac OS machine. Windows is not currently supported.
   Install magento2-instagram extension
-
+  
+[![Latest Stable Version](https://poser.pugx.org/magepow/autologin/v/stable)](https://packagist.org/packages/magepow/autologin)
+[![Total Downloads](https://poser.pugx.org/magepow/autologin/downloads)](https://packagist.org/packages/magepow/autologin)
+[![Daily Downloads](https://poser.pugx.org/magepow/autologin/d/daily)](https://packagist.org/packages/magepow/autologin)
 ### Step 1 : Download Magento 2 Autologin Extension
 
  #### Install via composer (recommend)
