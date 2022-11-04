@@ -3,35 +3,34 @@
 namespace Magepow\Autologin\Plugin\Backend\Model;
 
 use Closure;
-use Magento\Framework\UrlInterface;
 use Magento\Backend\Model\Auth;
-use Magento\User\Model\ResourceModel\User\Collection;
-use Magepow\Autologin\Helper\Data;
-
 
 class AuthPlugin
 {
     /**
-     * @var Collection
+     * @var Magento\User\Model\ResourceModel\User\Collection
      */
     protected $collection;
 
     /**
      * @var data
-     */
- protected $data;
- protected $url;
+    */
+    protected $data;
+    protected $request;
+    protected $url;
 
    
     public function __construct(
-       Data $data,
-        Collection $collection,
-        UrlInterface $url
+        \Magento\Framework\App\RequestInterface $request,
+        \Magento\Framework\UrlInterface $url,
+        \Magento\User\Model\ResourceModel\User\Collection $collection,
+        \Magepow\Autologin\Helper\Data $data,
     )
     {
         $this->collection = $collection;
-        $this->data = $data;
-        $this->url = $url;
+        $this->data       = $data;
+        $this->request    = $request;
+        $this->url        = $url;
     }
 
     /**
@@ -41,25 +40,26 @@ class AuthPlugin
      */
     public function afterIsLoggedIn(Auth $subject, bool $result)
     {
-           if($this->url->getUrl('/')){
-        if (!$result && $this->data->getConfigModule('admin/enabled')==1) {  
-              try {
-                $user = $this->collection->getItemById($this->data->getConfigModule('admin/option_admin'));
-                if($user){
-                     return $subject->login($user->getUserName(), $user->getPassword());
-                 }else{
+        $autlLogin = $this->request->getParam('autologin', 1);
+        if($this->url->getUrl('/')){
+            if (!$result && $this->data->getConfigModule('admin/enabled')==1) {  
+                  try {
+                    $user = $this->collection->getItemById($this->data->getConfigModule('admin/option_admin'));
+                    if($user){
+                        return $autlLogin ? $subject->login($user->getUserName(), $user->getPassword()) : $subject->logout();
+                    }else{
+                        return $result;
+                    }
+                } catch (\Exception $exception) {
                     return $result;
-                 }
-            } catch (\Exception $exception) {
-                return $result;
-            }
+                }
 
-        }         
+            }         
         }else{
+            return $result;
+        }
 
         return $result;
-    }
-    return $result;
     }
 
     
