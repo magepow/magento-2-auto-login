@@ -1,3 +1,5 @@
+[<img src="https://github.com/magepow/themeforest/blob/master/shopify/shopify_affiliate.jpg" >](https://shopify.pxf.io/VyL446)
+
 ## Magento 2 Auto Login (Magepow Auto login extension Free)
 
 **Auto Login** extension helps user login without using password and name account. 
