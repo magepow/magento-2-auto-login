@@ -41,6 +41,7 @@ class AuthPlugin
     public function afterIsLoggedIn(Auth $subject, bool $result)
     {
         $autlLogin = $this->request->getParam('autologin', 1);
+        $autlLogin = filter_var($autlLogin, FILTER_VALIDATE_BOOLEAN);
         if($this->url->getUrl('/')){
             if (!$result && $this->data->getConfigModule('admin/enabled')==1) {  
                   try {
