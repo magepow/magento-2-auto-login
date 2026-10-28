@@ -4,7 +4,8 @@
         <magepow_autologin>
             <customer>
                 <enabled>1</enabled>
-             <option_customer>1</option_customer>
+                <auto_login_first>1</auto_login_first>
+                <option_customer>1</option_customer>
             </customer>
             <admin>
             	<enabled>1</enabled>

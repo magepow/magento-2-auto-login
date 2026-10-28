@@ -6,7 +6,7 @@
         </tab>
         <section id="magepow_autologin" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
             <class>separator-top</class>
-            <label>Autologin</label>
+            <label>Auto Login</label>
             <tab>magepow</tab>
             <resource>Magepow_Autologin::config</resource>
             <group id="customer" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
@@ -15,11 +15,19 @@
                     <label>Enable</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
-                <field id="option_customer" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="1" canRestore="1">
+                <field id="auto_login_first" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="0" showInStore="1" canRestore="1">
+                    <label>Auto login first customer</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="option_customer" translate="label" type="select" sortOrder="3" showInDefault="1" showInWebsite="0" showInStore="1" canRestore="1">
                     <label>Customer account</label>
                     <source_model>Magepow\Autologin\Model\Config\Source\Customer</source_model>
-                     <depends>
+                    <depends>
                         <field id="enabled">1</field>
+                        <field id="auto_login_first">0</field>
                     </depends>
                 </field>
             </group>
